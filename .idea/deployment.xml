@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="website">
+    <serverData>
+      <paths name="website">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/FoodBook/" local="$PROJECT_DIR$" web="/http://robinlanckman.com/FoodBook/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

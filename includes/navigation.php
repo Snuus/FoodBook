@@ -5,7 +5,7 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-
+<h2></h2>
 <!-- Add your site or application content here -->
 <!-- Preloader Start Here -->
 <div id="preloader"></div>
@@ -16,6 +16,7 @@
 </a>
 <!-- ScrollUp End Here -->
 <div id="wrapper" class="wrapper parallaxie repeat-y bg-size-auto" data-bg-image="img/figure/page-bg.jpg">
+
     <!-- Header Area Start Here -->
     <header class="header-two">
         <div id="header-main-menu" class="header-main-menu header-sticky">
@@ -27,6 +28,7 @@
                             <a href="index.html" class="sticky-logo-dark"><img src="img/logo-dark.png" alt="Site Logo"></a>
                         </div>
                         <nav class="site-nav">
+
                             <ul id="site-menu" class="site-menu">
                                 <li><a href="#">Home</a>
                                     <ul class="dropdown-menu-col-1">
@@ -380,4 +382,9 @@
             </div>
         </div>
     </header>
+    <?php
+    if($database->connection){
+        echo "connected";
+    }
+    ?>
     <!-- Header Area End Here -->
