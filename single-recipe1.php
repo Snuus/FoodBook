@@ -41,7 +41,7 @@ $user = User::find_by_id(3);
                                     <ul class="entry-meta">
                                         <li class="single-meta"><a href="#"><i class="far fa-calendar-alt"></i>Nov 14,
                                                 2018</a></li>
-                                        <li class="single-meta"><a href="#"><i class="fas fa-user"></i>by <span><?php echo $user->username?></span></a></li>
+                                        <li class="single-meta"><a href="#"><i class="fas fa-user"></i>by <span>naam</span></a></li>
                                         <li class="single-meta">
                                             <ul class="item-rating">
                                                 <li class="star-fill"><i class="fas fa-star"></i></li>

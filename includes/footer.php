@@ -67,6 +67,7 @@
     </div>
 </div>
 <!-- Modal End-->
+
 <!-- Jquery Js -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap Js -->
@@ -81,6 +82,8 @@
 <script src="js/smoothscroll.min.js"></script>
 <!-- Custom Js -->
 <script src="js/main.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
