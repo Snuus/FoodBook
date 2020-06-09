@@ -1,6 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="">
+<?php
+$recipes = Recipe::find_all();
 
+
+?>
 <body>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -49,7 +53,9 @@
                                             <a href="recipe-without-sidebar.html">Recipes Without Sidebar</a>
                                         </li>
                                         <li>
-                                            <a href="single-recipe1.html">Single Recipe 1</a>
+                                            <?php foreach ($recipes as $recipe): ?>
+                                            <a href="single-recipe1.php?id=<?php echo $recipe->id;?>">
+                                                <?php endforeach; ?>
                                         </li>
                                         <li>
                                             <a href="single-recipe2.html">Single Recipe 2</a>

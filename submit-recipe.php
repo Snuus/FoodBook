@@ -12,7 +12,7 @@ $categorys = Category::find_all();
 
 $recipe = new Recipe();
 if(isset($_POST['submit'])){
-    $recipe->name = $_POST['name'];
+    $recipe->name = $_POST['titel'];
     $recipe->body = $_POST['body'];
     $recipe->user_id= $_SESSION['user_id'];
     $recipe->category_id = $_POST['filter-by'];
@@ -30,9 +30,14 @@ if(isset($_POST['submit'])){
 
 $steps = new Steps();
 if(isset($_POST['submit'])){
-    $steps->text = $_POST['text'];
+    $steps->text = $_POST['step_text'];
+
     $steps->recipepart_id = $part->id;
     $steps->save();
+foreach( $steps->text  as $ik){
+    $ik->save();
+}
+
 }
 
 
@@ -65,7 +70,7 @@ if(isset($_POST['submit'])){
                         <form class="submit-recipe-form" method="post">
                             <div class="form-group">
                                 <label>Recipe Title</label>
-                                <input type="text" placeholder="Recipe Name" class="form-control" name="name"
+                                <input type="text" placeholder="Recipe Name" class="form-control" name="titel"
 
                                     data-error="Subject field is required" required>
                                 <div class="help-block with-errors"></div>
@@ -135,7 +140,7 @@ if(isset($_POST['submit'])){
                                         <div class="field_wrapper">
                                         <div class="form-group additional-input-box icon-right ">
                                             <input type="text" placeholder="Step" id="number" class="form-control"
-                                                   name="text">
+                                                   name="step_text">
                                             <i class="far fa-clock add add_button"></i>
                                         </div>
                                         </div>

@@ -2,7 +2,7 @@
 
 <?php include_once('includes/header.php');?>
 <?php
-$recipes = Recipe::find_by_id(3);
+$recipe = Recipe::find_by_id($_GET['id']);
 $category = Category::find_by_id(5);
 $user = User::find_by_id(3);
 
@@ -35,7 +35,7 @@ $user = User::find_by_id(3);
                     <div class="col-lg-8">
                         <div class="single-recipe-layout1">
                             <div class="ctg-name"><?php echo $category->name?></div>
-                            <h2 class="item-title"><?php echo $recipes->name?></h2>
+                            <h2 class="item-title"><?php echo $recipe->name?></h2>
                             <div class="row mb-4">
                                 <div class="col-xl-9 col-12">
                                     <ul class="entry-meta">

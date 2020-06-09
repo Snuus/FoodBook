@@ -8,7 +8,7 @@ $(document).ready(function(){
     var fieldHTML = '                               <div class="form-group additional-input-box icon-right ">\n' +
         '\n' +
         '                                            <input type="text" placeholder="Step" id="number" class="form-control"\n' +
-        '                                                   name="text">\n' +
+        '                                                   name="step_text">\n' +
         '                                         <a href="javascript:void(0);" class="remove_button" ><i class="fas fa-clock"></i></a>\n' +
         '\n' +
         '                                        </div>'; //New input field html
@@ -18,7 +18,7 @@ $(document).ready(function(){
         '                                                <div class="form-group additional-input-box icon-left">\n' +
         '                                                    <i class="fas fa-clock"></i>\n' +
         '                                                    <input type="text" placeholder="Preparation Time: " class="form-control"\n' +
-        '                                                           name="name">\n' +
+        '                                                           name="step_text">\n' +
         '\n' +
         '                                                </div>\n' +
         '\n' +
